@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+@media screen and (max-width:1279px) and (min-width:744px) {
+
+    /* 메인서식 */
+    /* 배너서식 */
+    .banner {
+        max-height: 483px;
+        height: 40vh;
+    }
+
+    .banner ul li {
+        width: 100%;
+        max-height: 483px;
+    }
+
+    .banner ul li a img {
+        height: 100%;
+        width: 100%;
+        max-height: 483px;
+    }
+
+    /* 진행중인공연 */
+    .screen_list {
+        width: 90%;
+        margin: 0px auto 10px;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(3, 190px);
+        grid-template-areas:
+            ' s_a s_b s_c'
+            ' s_d s_b s_e'
+            ' s_f s_g s_h';
+        box-sizing: border-box;
+        grid-gap: 1%;
+    }
+
+    .screen_list>li:nth-child(2) {
+        height: 100%;
+    }
+
+    .screen_list>li:nth-child(3),
+    .screen_list>li:nth-child(5),
+    .screen_list>li:last-child {
+        display: block;
+    }
+
+    .screen_list>li {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* 패키지예매 */
+    .package ul {
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .package ul li {
+        margin: 0px;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .package ul li:last-child {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .package ul li:first-child,
+    .package ul li:nth-child(3) {
+        border-right: 1px solid #ccc;
+    }
+
+    /* 준비중인공연 */
+    .pre_list {
+        width: 95%;
+        margin: 0px auto;
+    }
+
+    .pre_list li a {
+        display: flex;
+    }
+
+    .pre_list li a img {
+        width: 50%;
+        padding: 0px 2.5%;
+    }
+
+    .pre_list li div {
+        width: 45%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .pre_list li a span {
+        text-align: center;
+    }
+
+    .preparing_screen article .fas {
+        top: 50%;
+    }
+
+
+    /* 공연장/공간안내 */
+    .theater {
+        height: 650px;
+    }
+
+    .theater ul li>div>div {
+        flex-direction: row;
+    }
+
+    .theater ul li img {
+        width: 50%;
+        margin-bottom: 0px;
+    }
+
+    .theater ul li dl {
+        width: 48%;
+    }
+
+    .theater ul li div a {
+        position: absolute;
+        right: 0px;
+    }
+
+    /* 멤버쉽서식 */
+    .membership div {
+        width: 90%;
+        display: flex;
+        position: relative;
+        margin: 0px auto;
+    }
+
+    .membership img {
+        width: 40%;
+    }
+
+    .membership p {
+        width: 60%;
+        margin-top: 0px;
+    }
+
+    .membership a {
+        position: absolute;
+        right: 10px;
+        bottom: 0px;
+    }
+
+    /* 푸터서식 */
+    footer {
+        height: 400px;
+    }
+
+    .f_top {
+        height: 350px;
+        position: relative;
+    }
+
+    .f_top>.lnb>ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .f_top>.lnb>ul>li {
+        width: 20%;
+    }
+
+    .f_top>.lnb>ul>li>a{
+        text-indent: 15px;
+    }
+/*  */
+    .f_top .sub {
+        display: block;
+        background-color: transparent;
+    }
+
+    .f_top .sub>li {
+        border: none;
+    }
+    .f_top .sub>li>a {
+        text-indent: 10px;
+    }
+/*  */
+    .f_top>.sns{position: absolute;
+        right: 50px;
+        bottom: 20px;
+        justify-content: space-around;
+    }
+    .f_top>.sns>li {
+        padding: 10px;
+        margin: 0px 8%;
+    }
+
+    .f_top>.sns>li:last-child{
+        padding: 10px 15px;
+    }
+}

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG아트센터 반응형사이트</title>
+    <!-- 초기화 -->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <!-- 기본서식 -->
+    <link href="./css/base.css" rel="stylesheet" type="text/css">
+    <!-- mobile서식 -->
+    <link href="./css/mobile.css" rel="stylesheet" type="text/css">
+    <!-- tablet서식 -->
+    <link href="./css/tablet.css" rel="stylesheet" type="text/css">
+    <!-- pc서식 -->
+    <link href="./css/pc.css" rel="stylesheet" type="text/css">
+    <!-- 폰트어썸연결 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css">
+    <!-- 제이쿼리 라이브러리 연결하기 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/jquery.cookie.js"></script>
+
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div class="h_inner">
+            <h1><a href="./index.html" title="메인화면으로가기"><img src="./images/h-logo.png" alt="상단로고"></a></h1>
+
+            <div class="search">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="gnb_wrap">
+                <div class="toggle">
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                </div>
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);" title="센터소개">센터소개 <i class="	fas fa-angle-down"></i></a>
+                            <ul class="sub">
+                                <li><a href="javascript:void(0);" title="운영기관">운영기관</a></li>
+                                <li><a href="javascript:void(0);" title="공연장소개">공연장소개</a></li>
+                                <li><a href="javascript:void(0);" title="내부소개">내부소개</a></li>
+                                <li><a href="javascript:void(0);" title="건축기법">건축기법</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" title="공연소개">공연소개 <i class="	fas fa-angle-down"></i></a>
+                            <ul class="sub">
+                                <li><a href="javascript:void(0);" title="연극">연극</a></li>
+                                <li><a href="javascript:void(0);" title="무용">무용</a></li>
+                                <li><a href="javascript:void(0);" title="뮤지컬">뮤지컬</a></li>
+                                <li><a href="javascript:void(0);" title="엔터테인먼트">엔터테인먼트</a></li>
+                                <li><a href="javascript:void(0);" title="서커스">서커스</a></li>
+                                <li><a href="javascript:void(0);" title="클래식">클래식</a></li>
+                                <li><a href="javascript:void(0);" title="재즈/월드뮤직">재즈/월드뮤직</a></li>
+                                <li><a href="javascript:void(0);" title="대중음악">대중음악</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" title="공연예매">공연예매 <i class="	fas fa-angle-down"></i></a>
+                            <ul class="sub">
+                                <li><a href="javascript:void(0);" title="장르별예매">장르별예매</a></li>
+                                <li><a href="javascript:void(0);" title="기간별예매">기간별예매</a></li>
+                                <li><a href="javascript:void(0);" title="연령별예매">연령별예매</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" title="공지사항">공지사항 <i class="	fas fa-angle-down"></i></a>
+                            <ul class="sub">
+                                <li><a href="javascript:void(0);" title="주차">주차</a></li>
+                                <li><a href="javascript:void(0);" title="이벤트 ">이벤트 </a></li>
+                                <li><a href="javascript:void(0);" title="공지사항">공지사항</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" title="회원서비스">회원서비스 <i class="	fas fa-angle-down"></i></a>
+                            <ul class="sub">
+                                <li><a href="javascript:void(0);" title="로그인">로그인</a></li>
+                                <li><a href="javascript:void(0);" title="회원가입">회원가입</a></li>
+                                <li><a href="javascript:void(0);" title="마이페이지">마이페이지</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="search_box">
+            <form action="">
+                <legend>검색창</legend>
+                <input type="text" placeholder="검색어를 입력해주세요." maxlength="20">
+                <span>검색</span>
+            </form>
+        </div>
+
+
+
+    </header>
+    <!-- 메인 -->
+    <main>
+        <section class="banner">
+            <h2>&nbsp;</h2>
+            <ul>
+                <li><a href="javascript:void(0);" title="로미오와줄리엣"><img src="./images/banner- romeo and juliet.jpg"
+                            alt=""></a></li>
+                <li><a href="javascript:void(0);" title="레베카"><img src="./images/banner-rebecca.png" alt=""></a></li>
+                <li><a href="javascript:void(0);" title="룸"><img src="./images/banner-room.jpg" alt=""></a></li>
+                <li><a href="javascript:void(0);" title="벚꽃동산"><img src="./images/banner-the cherry orchard.jpg"
+                            alt=""></a></li>
+                <li><a href="javascript:void(0);" title="와이프"><img src="./images/banner-wife.png" alt=""></a></li>
+            </ul>
+            <div class="b_c_btn">
+                <span class="on">&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+            </div>
+        </section>
+        <section class="screen">
+            <h2>&nbsp;</h2>
+            <article>
+                <h2>진행중인 공연<i class="	fas fa-plus"></i></h2>
+                <ul class="screen_list">
+                    <li>
+                        <a href="javascript:void(0);" title="레베카">
+                            <p>레베카</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" title="비Bea">
+                            <p>비Bea</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" title="필립 드쿠플레 ‘샤잠!’">
+                            <p>필립 드쿠플레 ‘샤잠!’</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" title="매튜 본의 ‘로미오와 줄리엣’">
+                            <p>매튜 본의 ‘로미오와 줄리엣’</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" title="제임스 띠에리 ‘룸’">
+                            <p>제임스 띠에리 ‘룸’</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" title="프라이부르크 바로크 오케스트라 ‘마태 수난곡’">
+                            <p>프라이부르크 바로크 오케스트라 ‘마태 수난곡’</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" title="와이프">
+                            <p>와이프</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" title="파비오 비온디 & 잔자코모 피나르디">
+                            <p>파비오 비온디 & 잔자코모 피나르디</p>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="package">
+            <h2>&nbsp;</h2>
+            <article>
+                <h2>패키지예매</h2>
+                <ul>
+                    <li>
+                        <img src="./images/package-double.png" alt="CoMPAS 24 더블 패키지">
+                        <dl>
+                            <dt>
+                                <h3>CoMPAS 24 더블 패키지</h3>
+                            </dt>
+                            <dd>CoMPAS 24 더블 패키지 25% 할인</dd>
+                            <dd>판매기간 : 2024.01.09 ~ 2024.02.29</dd>
+                        </dl><a href="javascript:void(0);" title="예매하러가기">예매하러가기</a>
+                    </li>
+                    <li>
+                        <img src="./images/package-imagenation.png" alt="프렌치 이매지네이션 패키지">
+                        <dl>
+                            <dt>
+                                <h3>프렌치 이매지네이션 패키지</h3>
+                            </dt>
+                            <dd>CoMPAS 24 프렌치 이매지네이션
+                                패키지 15% 할인 </dd>
+                            <dd>판매기간 : 2024.01.09 ~ 2024.02.29</dd>
+                        </dl><a href="javascript:void(0);" title="예매하러가기">예매하러가기</a>
+                    </li>
+                    <li>
+                        <img src="./images/package-compas 6.png" alt="CoMPAS 24 자유 패키지 (6편 이상)">
+                        <dl>
+                            <dt>
+                                <h3>CoMPAS 24 자유 패키지 (6편 이상)</h3>
+                            </dt>
+                            <dd>자유패키지 6편이상 할인 20%</dd>
+                            <dd>판매기간 : 2024.01.09 ~ 2024.02.29</dd>
+                        </dl><a href="javascript:void(0);" title="예매하러가기">예매하러가기</a>
+                    </li>
+                    <li>
+                        <img src="./images/package-compas 4.png" alt="Co MPAS 24 자유 패키지 (4편 이상)">
+                        <dl>
+                            <dt>
+                                <h3>CoMPAS 24 자유 패키지 (4편 이상)</h3>
+                            </dt>
+                            <dd>자유패키지 4편이상 할인 15%</dd>
+                            <dd>판매기간 : 2024.01.09 ~ 2024.02.29</dd>
+                        </dl><a href="javascript:void(0);" title="예매하러가기">예매하러가기</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="preparing_screen">
+            <h2>&nbsp;</h2>
+            <article>
+                <h2>준비중인공연</h2>
+                <div>
+                    <ul class="pre_list">
+                        <li>
+                            <a href="javascript:void(0);" title="퇴근길 콘서트">
+                                <img src="./images/preparing-rushhour.jpg" alt="">
+                                <div>
+                                    <h4>&#60;클래식&#62;2024 서울시향 퇴근길 콘서트</h4>
+                                    <p>LG SIGNATURE 홀<br>공연기간 : 2024.04.09 ~ 추후공지
+                                    </p>
+                                    <span>자세히보기</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" title="키즈 콘서트">
+                                <img src="./images/preparing-kids.jpg" alt="">
+                                <div>
+                                    <h4>&#60;클래식&#62;서울시향과 함께하는 키즈 콘서트 ‘클래식 음악여행’</h4>
+                                    <p>LG SIGNATURE 홀<br>공연기간 : 2024.04.12 ~ 추후공지</p>
+                                    <span>자세히보기</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" title="마비노기 자라섬재즈">
+                                <img src="./images/preparing-mabinogi.jpg" alt="">
+                                <div>
+                                    <h4>&#60;재즈/월드뮤직&#62;마비노기 자라섬재즈 빅밴드 Live</h4>
+                                    <p>LG SIGNATURE 홀<br>공연기간 : 2024.05.01 ~ 추후공지</p>
+                                    <span>자세히보기</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" title="피나와 함께 춤을">
+                                <img src="./images/preparing-Dancing with Pina (working title).jpg" alt="">
+                                <div>
+                                    <h4>&#60;연극&#62; Creator's Box: '피나와 함께 춤을(가제)'</h4>
+                                    <p>U+ 스테이지<br>공연기간 : 2024.09.28 ~ 10.06</p>
+                                    <span>자세히보기</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="fas fa-angle-left"></i>
+                    <i class="fas fa-angle-right"></i>
+
+
+                </div>
+            </article>
+        </section>
+        <section class="theater">
+            <h2>&nbsp;</h2>
+            <article>
+                <h2>공연장 공간안내</h2>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);" title="LG SIGNATURE 홀" class="view_color">LG SIGNATURE 홀</a>
+
+                        <div class="view">
+                            <img src="./images/hall-LG SIGNATURE HALL.png" alt="LG SIGNATURE 홀">
+                            <dl>
+                                <dt>
+                                    <h3>LG SIGNATURE 홀</h3>
+                                </dt>
+                                <dd><b>&nbsp;오케스트라부터 오페라, 뮤지컬, 연극, 발레, 콘서트까지 공연할 수 있는
+                                        1,335석 규모의 다목적 공연장</b></dd>
+                                <dd>&nbsp;직사각형 프로시니엄 형태로 가로 12M에서 20M까지, 높이는 8M에서 12M까지 변화할 수 있고,
+                                    소리가 반사되는 잔향 시간을 1.2초에서 1.85초까지 조정하여 장르에 따라 적합한 음향 환경을 조성할 수 있습니다.
+                                    1층 742석, 2층 315석, 3층 278석 규모로 2, 3층의 발코니 좌석은 무대를 감싸듯 곡선으로 만들어졌습니다.
+                                    특히, 역삼동 LG아트센터에 국내 최초로 도입됐던 건축구조분리공법(Box in Box)을 홀 전체에 반영하여,
+                                    지하철뿐 아니라 헬리콥터 및 항공기 소음까지 완벽히 차단했습니다.</dd>
+                            </dl>
+                            <a href="javascript:void(0);" title="자세히보기">자세히보기</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" title="U+ 스테이지">U+ 스테이지</a>
+
+                        <div>
+                            <img src="./images/hall-U+ STAGE.png" alt="U+ 스테이지">
+                            <dl>
+                                <dt>
+                                    <h3>U+ 스테이지</h3>
+                                </dt>
+                                <dd> <b>&nbsp;2개 층 최대 365석 규모로 공연 성격에 따라 좌석 배치를 자유 자재로 변경할 수 있는 가변형 극장</b>
+                                </dd>
+                                <dd>&nbsp;객석이 무대 정면을 바라보는 프로시니엄 구조는 물론, 무대를 중앙에 두고 양쪽 객석을 마주보는 구조,
+                                    객석이 무대를 둥글게 감싸는 아레나 구조 등, 아티스트의 의도에 따라 유연하게 무대와 객석을 조합할 수 있습니다.
+                                    이중벽체구조를 적용하여 소음을 차단했으며, 연극, 무용, 재즈 등 다양한 형태의 공연은 물론,
+                                    콘퍼런스도 진행할 수 있습니다.</dd>
+                            </dl>
+                            <a href="javascript:void(0);" title="자세히보기">자세히보기</a>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" title="아트 라운지">아트 라운지</a>
+
+                        <div>
+                            <img src="./images/hall-rounge.png" alt="아트 라운지">
+                            <dl>
+                                <dt>
+                                    <h3>아트 라운지</h3>
+                                </dt>
+                                <dd>&nbsp;LG아트센터 서울 2층에 위치한 소규모 전시 및 라운지 공간입니다.
+                                    천창을 통해 빛이 내부로 들어오고, 튜브의 노출 콘크리트 외벽도 확인할 수 있습니다.
+                                    관객 휴게의 공간이자 전시 공간으로, LG아트센터 서울 건축 과정에 대한
+                                    안도 다다오의 설계도, 계획안, 건축 모형을 만나 보실 수 있습니다.</dd>
+                            </dl>
+                            <a href="javascript:void(0);" title="자세히보기">자세히보기</a>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" title="리허설룸">리허설룸</a>
+                        <div>
+                            <img src="./images/hall-rehearsal.png" alt="리허설룸">
+                            <dl>
+                                <dt>
+                                    <h3>리허설룸</h3>
+                                </dt>
+                                <dd>&nbsp;LG아트센터 서울은 오케스트라 및 뮤지컬, 오페라 연습까지 가능한 대형 리허설룸과
+                                    연극/무용 연습에 적합한 소형 리허설룸을 구비하여 공연 제작을 위한 최적의 환경을 구현했습니다.</dd>
+                            </dl>
+                            <a href="javascript:void(0);" title="자세히보기">자세히보기</a>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" title="스튜디오/클래스룸">스튜디오/클래스룸</a>
+                        <div>
+                            <img src="./images/hall-classroom.png" alt="스튜디오/클래스룸">
+                            <dl>
+                                <dt>
+                                    <h3>스튜디오/클래스룸</h3>
+                                </dt>
+                                <dd>LG아트센터 서울 3층에 위치한 3개의 클래스룸에서는 다양한 예술 교육 프로그램이 진행됩니다.
+                                    옥외 테라스와 연결된 스튜디오에서는 창의적인 예술 교육, 워크숍 등 다양한 이벤트가 펼쳐집니다.</dd>
+                            </dl>
+                            <a href="javascript:void(0);" title="자세히보기">자세히보기</a>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+
+        <section class="notice_wrap">
+            <h2>&nbsp;</h2>
+            <article class="membership">
+                <h2>회원가입혜택</h2>
+                <div>
+                    <img src="./images/membership.png" alt="멤버쉽사진">
+                    <p><span>LG아트센터 회원은 예매 수수료가 없습니다.</span>
+                        <br>
+                        <i class="far fa-hand-point-right"></i> 공연을 본 만큼 아트포인트를 적립하고,
+                        자유롭게 사용하실 수 있습니다.<br>
+                        <i class="far fa-hand-point-right"></i> 우수회원이 되면 포인트 2배 적립과 음료 제공
+                        등 더 많은 혜택을 드립니다.
+                        <span>&nbsp;</span>
+                    </p><br>
+                    <a href="javascript:void(0);" title="자세히보기">자세히보기</a>
+                </div>
+            </article>
+            <article class="notice">
+                <h2>공지사항<i class="	fas fa-plus"></i></h2>
+                <ul>
+                    <li><a href="javascript:void(0);" title=""><span></i> &dot;2024년 LG아트센터 서울 수시대관 신청
+                                안내</span><span>2024.01.04</span></a>
+                    </li>
+                    <li><a href="javascript:void(0);" title=""><span></i> &dot;LG아트센터 서울 향기 136 설 프로모션
+                                할인</span><span>2024.01.23</span></a>
+                    </li>
+                    <li><a href="javascript:void(0);" title=""><span></i> &dot;[안내] LG아트센터 서울 주차요금
+                                변경</span><span>2024.01.22</span></a></li>
+                    <li><a href="javascript:void(0);" title=""><span></i> &dot;[티켓오픈] 국립발레단 <백조의호수> 오픈
+                                    안내</span><span>2024.01.16</span></a>
+                    </li>
+                    <li><a href="javascript:void(0);" title=""><span>&dot;LG아트센터 서울 CoMPAS 24 티켓 매진
+                                안내</span><span>2024.01.16</span></a>
+                    </li>
+                </ul>
+            </article>
+
+        </section>
+    </main>
+    <!-- 푸터 -->
+    <footer>
+
+
+
+        <div class="f_top">
+            <nav class="lnb">
+                <ul>
+                    <li><a href="javascript:void(0);" title="아트센터 소개">아트센터 소개 <span>&nbsp;</span><span>&nbsp;</span></a>
+                        <ul class="sub">
+                            <li>
+                                <a href="javascript:void(0);" title="운영기관">운영기관</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" title="공연장소개">공연장소개</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" title="내부소개">내부소개</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" title="건축기법">건축기법</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" title="공연소개">공연소개 <span>&nbsp;</span><span>&nbsp;</span></a>
+                        <ul class="sub">
+                            <li>
+                                <a href="javascript:void(0);" title="연극">연극</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" title="무용">무용</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" title="뮤지컬">뮤지컬</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" title="엔터테인먼트">엔터테인먼트
+                                    <span>&nbsp;</span><span>&nbsp;</span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" title="서커스">서커스</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" title="클래식">클래식</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" title="재즈/월드뮤직">재즈/월드뮤직</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" title="대중음악">대중음악</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" title="공연예매">공연예매 <span>&nbsp;</span><span>&nbsp;</span></a>
+                        <ul class="sub">
+                            <li>
+                                <a href="javascript:void(0);" title="장르별예매">장르별예매</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" title="기간별예매">기간별예매 </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" title="연령별예매">연령별예매</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" title="공지사항">공지사항 <span>&nbsp;</span><span>&nbsp;</span></a>
+                        <ul class="sub">
+                            <li>
+                                <a href="javascript:void(0);" title="공지사항">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" title="이벤트">이벤트</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" title="주차">주차</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" title="회원서비스">회원서비스 <span>&nbsp;</span><span>&nbsp;</span></a>
+                        <ul class="sub">
+                            <li>
+                                <a href="javascript:void(0);" title="로그인">로그인</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" title="회원가입">회원가입</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" title="마이페이지">마이페이지</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="sns">
+                <li><a href="javascript:void(0);" title="youtube"><img src="./images/f_youtube.png" alt="youtube"></a>
+                </li>
+                <li><a href="javascript:void(0);" title="instagram"><img src="./images/f_insta.png" alt="instagram"></a>
+                </li>
+                <li><a href="javascript:void(0);" title="facebook"><img src="./images/f_facebook.png"
+                            alt="facebook"></a></li>
+            </ul>
+        </div>
+        <div class="f_bottom">
+            <h2>
+                <a href="javascript:void(0);" title="메인화면으로가기">
+                    <img src="./images/f_logo.jpg" alt="하단로고">
+                </a>
+            </h2>
+        </div>
+    </footer> <!-- 탑버튼 -->
+    <span i class="fas fa-angle-up t_btn"></span>
+</body>
+
+</html>

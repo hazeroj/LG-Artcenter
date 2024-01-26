@@ -1,0 +1,479 @@
+@charset "utf-8";
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (min-width:1280px) {
+
+
+    /* 헤더서식 */
+    .h_inner {
+        max-width: 1280px;
+        margin: 0px auto;
+    }
+
+    h1 {
+        order: 1;
+        width: auto;
+    }
+
+    /* 검색창 */
+    .search_box form {
+        width: 1000px;
+    }
+
+    .search_box {
+
+        height: 100px;
+    }
+
+    /* 내비게이션서식 */
+    .toggle {
+        display: none;
+    }
+
+    .gnb_wrap {
+        order: 2;
+    }
+
+    /* 메인내비 */
+    .gnb {
+        display: block;
+        position: relative;
+        top: 0px;
+        background-color: transparent
+    }
+
+    .gnb ul {
+        border: none;
+    }
+
+    .gnb>ul {
+        display: flex;
+        padding: 0px;
+
+        border-bottom: none;
+    }
+
+    .gnb>ul>li {
+        margin: 0px 10px;
+        position: relative;
+    }
+
+    .gnb>ul>li>a {
+        display: block;
+        white-space: nowrap;
+        color: #333;
+    }
+
+    .gnb>ul>li>a:hover,
+    header .sub>li>a:hover,
+    .gnb>ul>li>a:hover>i {
+        background-color: none;
+        color: #333;
+    }
+
+    .gnb>ul>li>a>i {
+        float: none;
+        color: #333;
+    }
+
+    /* 서브내비 */
+    .sub {
+        width: 129px;
+        position: absolute;
+        background-color: rgba(0, 0, 0, .5);
+        top: 57px;
+        height: 280px;
+        padding-top: 10px;
+    }
+
+    .sub::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 129px;
+        height: 300px;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .sub::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 129px;
+        width: 100vw;
+        height: 300px;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .sub>li>a {
+        white-space: nowrap;
+        padding: 0px;
+    }
+
+    header .sub>li>a:hover {
+        font-weight: 600;
+    }
+
+    /* 메인서식 */
+
+    article {
+        width: 1280px;
+        margin: 0px auto;
+    }
+
+    /* 배너서식 */
+    .banner {
+        width: 100%;
+        height: 600px;
+        max-height: none;
+    }
+
+    .banner ul li {
+        width: 100%;
+        height: 600px;
+    }
+
+    .banner ul li a img {
+        height: 600px;
+        width: 100%;
+    }
+
+
+
+    /* 진행중인공연 */
+    .screen_list {
+        width: 100%;
+        min-width: 1025px;
+        max-width: 1100px;
+        margin: 0px auto 10px;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(3, 330px);
+        grid-template-areas:
+            ' s_a s_b s_c'
+            ' s_d s_b s_e'
+            ' s_f s_g s_h';
+        box-sizing: border-box;
+        grid-gap: 10px;
+    }
+
+    .screen_list>li:nth-child(2) {
+        height: 100%;
+    }
+
+    .screen_list>li:nth-child(3),
+    .screen_list>li:nth-child(5),
+    .screen_list>li:last-child {
+        display: block;
+    }
+
+    .screen_list>li {
+        width: 100%;
+        height: 100%;
+        max-width: none;
+    }
+
+    /* 패키지예매 */
+    .package ul {
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(1, auto);
+    }
+
+    .package ul li {
+        margin: 0px;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .package ul li:last-child {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .package ul li:first-child,
+    .package ul li:nth-child(2),
+    .package ul li:nth-child(3) {
+        border-right: 1px solid #ccc;
+    }
+
+    /* 준비중인공연 */
+    .preparing_screen>article {
+        width: 1200px;
+    }
+
+    .pre_list {
+        width: 95%;
+        margin: 0px auto;
+    }
+
+    .pre_list li {
+        width: 50%;
+    }
+
+    .pre_list li a {
+        display: flex;
+    }
+
+    .pre_list li a img {
+        width: 47%;
+        padding: 0px 4%;
+    }
+
+    .pre_list li div {
+        width: 45%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .pre_list li a span {
+        text-align: center;
+    }
+
+    .preparing_screen article .fas {
+        top: 50%;
+    }
+
+    .preparing_screen>article {
+        max-width: 1280px;
+        margin: 0px auto;
+    }
+
+    /* 공연장/공간안내 */
+    .theater {
+        height: 500px;
+    }
+
+    .theater ul {
+        display: flex;
+        max-width: 1280px;
+        margin: 0px auto;
+    }
+
+    .theater ul li {
+        width: 20%;
+        margin-left: 10px;
+        position: relative;
+    }
+
+    .theater ul li>div {
+        display: none;
+        position: absolute;
+        width: 1000px;
+        height: 350px;
+        margin: 0px;
+        top: 34px;
+    }
+
+    .theater ul li:nth-child(4)>div,
+    .theater ul li:last-child>div {
+        left: auto;
+        right: 0px;
+    }
+
+    .theater ul li:nth-child(3)>div {
+        transform: translateX(-50%);
+    }
+
+    .theater ul li img {
+        width: 400px;
+        margin-bottom: 0px;
+    }
+
+
+    .theater ul li div a {
+        position: absolute;
+        right: 0px;
+    }
+
+    .view {
+        display: flex !important;
+    }
+
+    /*  */
+    .notice_wrap {
+        flex-direction: row;
+        width: 1280px;
+    }
+
+    /* 멤버쉽서식 */
+
+    .membership div {
+        /* width: 90%; */
+        display: flex;
+        position: relative;
+        margin: 0px auto;
+    }
+
+    .membership img {
+        width: 40%;
+
+    }
+
+    .membership p {
+        width: 60%;
+        margin-top: 0px;
+    }
+
+    .membership a {
+        position: absolute;
+        right: 10px;
+        bottom: 0px;
+    }
+
+
+    /*  */
+    .notice_wrap {
+        margin: 0px auto 50px;
+    }
+
+    .notice {
+        margin-top: 0px;
+        padding: 0px;
+        background-color: #fff;
+    }
+
+    .membership a {
+        bottom: -40px;
+    }
+
+    /* 푸터서식 */
+    footer {
+        height: 400px;
+    }
+
+    .f_top {
+        height: 350px;
+        position: relative;
+        max-width: 1280px;
+        margin: 0px auto;
+    }
+
+    .f_top>.lnb>ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .f_top>.lnb>ul>li {
+        width: 20%;
+    }
+
+    .f_top>.lnb>ul>li>a {
+        text-indent: 15px;
+    }
+
+    .f_top>.lnb>ul>li>a:hover {
+        color: #E0B651;
+    }
+
+    /*  */
+    .f_top .sub {
+        display: block;
+        background-color: transparent;
+    }
+
+    .f_top .sub>li {
+        border: none;
+    }
+
+    .f_top .sub>li>a {
+        text-indent: 10px;
+    }
+
+    .f_top .sub>li>a:hover {
+        text-decoration: underline;
+        color: #E0B651;
+    }
+
+    /*  */
+    .f_top>.sns {
+        position: absolute;
+        right: 50px;
+        bottom: 20px;
+        justify-content: space-around;
+    }
+
+    .f_top>.sns>li {
+        padding: 10px;
+        margin: 0px 8%;
+    }
+
+    .f_top>.sns>li:last-child {
+        padding: 10px 15px;
+    }
+
+    .f_bottom h2 {
+        width: 1280px;
+        margin: 0px auto;
+    }
+
+    .f_top>.sns>li:hover {
+        border: 2px solid #E0B651;
+        background-color: #E0B651;
+    }
+
+    /* 탑버튼 */
+    .fa-angle-up {
+        position: fixed;
+        bottom: 100px;
+        right: 100px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border-radius: 50%;
+        border: 2px solid #000000;
+        font-size: 2rem;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    /* 모달서식 */
+    .modal {
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 50;
+    }
+
+    .modal .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 51;
+        background-color: #fff;
+    }
+
+    .modal .center img {
+        display: block;
+    }
+
+    .center .today {
+        float: left;
+        line-height: 1.4rem;
+        margin: 10px;
+    }
+
+    .today label {
+        font-size: 0.9rem;
+        color: #333;
+    }
+
+    #c_btn {
+        float: right;
+        margin: 10px 20px;
+        background-color: #ff8900;
+        border: none;
+        padding: 4px 6px;
+        font-size: 0.9rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+}
