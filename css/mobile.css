@@ -445,6 +445,8 @@ article>h2 {
 
 .pre_list {
     display: flex;
+    position: relative;
+    left:0px;
 }
 
 .pre_list li {
@@ -544,7 +546,15 @@ article>h2 {
 
 .view {
     display: block !important;
+    
 }
+
+.view img{
+    
+    max-width: 400px;
+    max-height: 350px;
+}
+
 
 .view_color {
     background-color: #B27A18 !important;
@@ -563,6 +573,7 @@ article>h2 {
 
 .theater ul li img {
     width: 100%;
+    margin: 0px auto;
     margin-bottom: 10px;
 }
 
