@@ -437,6 +437,7 @@ body::-webkit-scrollbar {
         width: 20%;
     }
 
+
     .f_top>.lnb>ul>li>a {
         text-indent: 0px;
     }
@@ -444,7 +445,10 @@ body::-webkit-scrollbar {
     .f_top>.lnb>ul>li>a:hover {
         color: #E0B651;
     }
-
+    .f_top>.lnb>ul>li>a>span:first-child,
+    .f_top>.lnb>ul>li>a>span:last-child {
+        display: none;
+    }
     /* 푸터 상단서식 */
     .f_top .sub {
         display: block;
