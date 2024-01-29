@@ -389,7 +389,7 @@ article>h2 {
     color: #fff;
     font-size: 0.9rem;
     padding: 5px;
-    line-height: 1.2rem;
+    line-height: 2rem;
     text-align: center;
 }
 
@@ -545,15 +545,19 @@ article>h2 {
 }
 
 .view {
-    display: block !important;
+    display: flex !important;
+    flex-direction: column;
     
 }
 
 .view img{
-    
+/*     
     max-width: 400px;
     max-height: 350px;
-}
+ */
+ 
+width: 100%;
+height: 100%;}
 
 
 .view_color {
@@ -771,6 +775,10 @@ footer {
 /* 푸터 내비게이션서식 */
 .f_top>.lnb {
     padding-top: 20px;
+}
+
+.f_top>.lnb>ul>li>a>span:first-child,.f_top>.lnb>ul>li>a>span:last-child{
+    display: none;
 }
 
 

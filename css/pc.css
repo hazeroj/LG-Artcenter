@@ -6,6 +6,10 @@ body::-webkit-scrollbar {
 
 @media screen and (min-width:1280px) {
 
+    .screen h2 .fas,
+    .notice h2 .fas {
+        display: none !important;
+    }
 
     /* 헤더서식 */
     .h_inner {
@@ -80,7 +84,7 @@ body::-webkit-scrollbar {
     }
 
     /* 서브내비 */
-    .sub {
+    .gnb .sub {
         width: 129px;
         position: absolute;
         background-color: rgba(0, 0, 0, .5);
@@ -89,7 +93,7 @@ body::-webkit-scrollbar {
         padding-top: 10px;
     }
 
-    .sub::before {
+    .gnb .sub::before {
         content: "";
         position: absolute;
         top: 0px;
@@ -99,7 +103,7 @@ body::-webkit-scrollbar {
         background-color: rgba(0, 0, 0, .5);
     }
 
-    .sub::after {
+    .gnb .sub::after {
         content: "";
         position: absolute;
         top: 0px;
@@ -109,7 +113,7 @@ body::-webkit-scrollbar {
         background-color: rgba(0, 0, 0, .5);
     }
 
-    .sub>li>a {
+    .gnb .sub>li>a {
         white-space: nowrap;
         padding: 0px;
     }
@@ -174,6 +178,26 @@ body::-webkit-scrollbar {
         width: 100%;
         height: 100%;
         max-width: none;
+        transition: 0.5s;
+
+    }
+    .screen_list>li:hover{
+        filter: grayscale(0.5);
+    }
+
+    .screen_list>li>a>p {
+        height: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0px;
+        transition: 0.5s;
+    }
+
+    .screen_list>li:hover>a>p {
+        height: 100px;
+        line-height: 3rem;font-size: 0.9rem;
     }
 
     /* 패키지예매 */
@@ -189,6 +213,9 @@ body::-webkit-scrollbar {
         padding: 20px 0px 0px 0px;
     }
 
+    .package ul li:not(:nth-child(2)) a{
+        transform: translateY(90%);
+    }
     .package ul li:last-child {
         border-bottom: 1px solid #ccc;
     }
@@ -291,13 +318,27 @@ body::-webkit-scrollbar {
     }
 
     .view {
-        display: flex !important;
+        flex-direction: row;
     }
 
-    /*  */
+
+
+
+    /* 공지사항과 멤버십 */
     .notice_wrap {
+        margin: 0px auto 50px;
         flex-direction: row;
         width: 1280px;
+    }
+
+    .notice {
+        margin-top: 0px;
+        padding: 0px;
+        background-color: #fff;
+    }
+
+    .membership a {
+        bottom: -40px;
     }
 
     /* 멤버쉽서식 */
@@ -326,21 +367,6 @@ body::-webkit-scrollbar {
     }
 
 
-    /*  */
-    .notice_wrap {
-        margin: 0px auto 50px;
-    }
-
-    .notice {
-        margin-top: 0px;
-        padding: 0px;
-        background-color: #fff;
-    }
-
-    .membership a {
-        bottom: -40px;
-    }
-
     /* 푸터서식 */
     footer {
         height: 400px;
@@ -363,14 +389,14 @@ body::-webkit-scrollbar {
     }
 
     .f_top>.lnb>ul>li>a {
-        text-indent: 15px;
+        text-indent: 0px;
     }
 
     .f_top>.lnb>ul>li>a:hover {
         color: #E0B651;
     }
 
-    /*  */
+    /* 푸터 상단서식 */
     .f_top .sub {
         display: block;
         background-color: transparent;
@@ -381,7 +407,8 @@ body::-webkit-scrollbar {
     }
 
     .f_top .sub>li>a {
-        text-indent: 10px;
+        text-indent: 0px;
+        padding: 0px;
     }
 
     .f_top .sub>li>a:hover {
@@ -389,7 +416,7 @@ body::-webkit-scrollbar {
         color: #E0B651;
     }
 
-    /*  */
+    /* 푸터상단 sns */
     .f_top>.sns {
         position: absolute;
         right: 50px;

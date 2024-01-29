@@ -126,6 +126,10 @@
         right: 0px;
     }
 
+    .view {
+        flex-direction: row;
+    }
+
     /* 멤버쉽서식 */
     .membership div {
         width: 90%;
@@ -168,10 +172,11 @@
         width: 20%;
     }
 
-    .f_top>.lnb>ul>li>a{
+    .f_top>.lnb>ul>li>a {
         text-indent: 15px;
     }
-/*  */
+
+    /*  */
     .f_top .sub {
         display: block;
         background-color: transparent;
@@ -180,21 +185,25 @@
     .f_top .sub>li {
         border: none;
     }
+
     .f_top .sub>li>a {
         text-indent: 10px;
     }
-/*  */
-    .f_top>.sns{position: absolute;
+
+    /*  */
+    .f_top>.sns {
+        position: absolute;
         right: 50px;
         bottom: 20px;
         justify-content: space-around;
     }
+
     .f_top>.sns>li {
         padding: 10px;
         margin: 0px 8%;
     }
 
-    .f_top>.sns>li:last-child{
+    .f_top>.sns>li:last-child {
         padding: 10px 15px;
     }
 }
