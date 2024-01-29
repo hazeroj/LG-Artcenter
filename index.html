@@ -3,6 +3,9 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LG아트센터 반응형사이트">
+    <meta name="keywords" content="LG아트센터, 연극, 뮤지컬, 오페라, 오케스트라, 콘서트, 예매">
+    <meta property="og:title" content="LG아트센터 반응형사이트">
     <title>LG아트센터 반응형사이트</title>
     <!-- 초기화 -->
     <link href="./css/reset.css" rel="stylesheet" type="text/css">
@@ -14,6 +17,9 @@
     <link href="./css/tablet.css" rel="stylesheet" type="text/css">
     <!-- pc서식 -->
     <link href="./css/pc.css" rel="stylesheet" type="text/css">
+    <!-- 파비콘 -->
+    <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
     <!-- 폰트어썸연결 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -109,13 +115,17 @@
         <section class="banner">
             <h2>&nbsp;</h2>
             <ul>
-                <li><a href="javascript:void(0);" title="로미오와줄리엣"><img src="./images/banner- romeo and juliet.jpg"
-                            alt=""></a></li>
-                <li><a href="javascript:void(0);" title="레베카"><img src="./images/banner-rebecca.png" alt=""></a></li>
-                <li><a href="javascript:void(0);" title="룸"><img src="./images/banner-room.jpg" alt=""></a></li>
-                <li><a href="javascript:void(0);" title="벚꽃동산"><img src="./images/banner-the cherry orchard.jpg"
-                            alt=""></a></li>
-                <li><a href="javascript:void(0);" title="와이프"><img src="./images/banner-wife.png" alt=""></a></li>
+                <li><a href="#" title="로미오와줄리엣">
+                        <img src="./images/banner- romeo and juliet.jpg" alt="romeo and juliet"></a></li>
+                <li><a href="#" title="레베카">
+                        <img src="./images/banner-rebecca.png" alt="rebecca"></a></li>
+                <li><a href="#" title="룸">
+                        <img src="./images/banner-room.jpg" alt="room"></a></li>
+                <li><a href="#" title="벚꽃동산">
+                        <img src="./images/banner-the cherry orchard.jpg" alt="벚꽃동산"></a></li>
+                <li><a href="#" title="와이프">
+                        <img src="./images/banner-wife.png" alt="와이프">
+                    </a></li>
             </ul>
             <div class="b_c_btn">
                 <span class="on">&nbsp;</span>
@@ -179,45 +189,51 @@
                 <h2>패키지예매</h2>
                 <ul>
                     <li>
-                        <img src="./images/package-double.png" alt="CoMPAS 24 더블 패키지">
-                        <dl>
-                            <dt>
-                                <h3>CoMPAS 24 더블 패키지</h3>
-                            </dt>
-                            <dd>CoMPAS 24 더블 패키지 25% 할인</dd>
-                            <dd>판매기간 : 2024.01.09 ~ 2024.02.29</dd>
-                        </dl><a href="javascript:void(0);" title="예매하러가기">예매하러가기</a>
+                        <a href="javascript:void(0);" title="CoMPAS 24 더블 패키지"><img src="./images/package-double.png"
+                                alt="CoMPAS 24 더블 패키지">
+                            <dl>
+                                <dt>
+                                    <h3>CoMPAS 24 더블 패키지</h3>
+                                </dt>
+                                <dd>CoMPAS 24 더블 패키지 25% 할인</dd>
+                                <dd>판매기간 : 2024.01.09 ~ 2024.02.29</dd>
+                            </dl>
+                        </a>
+                        <a href="javascript:void(0);" title="예매하러가기">예매하러가기</a>
                     </li>
-                    <li>
-                        <img src="./images/package-imagenation.png" alt="프렌치 이매지네이션 패키지">
-                        <dl>
-                            <dt>
-                                <h3>프렌치 이매지네이션 패키지</h3>
-                            </dt>
-                            <dd>CoMPAS 24 프렌치 이매지네이션
-                                패키지 15% 할인 </dd>
-                            <dd>판매기간 : 2024.01.09 ~ 2024.02.29</dd>
-                        </dl><a href="javascript:void(0);" title="예매하러가기">예매하러가기</a>
+                    <li><a href="javascript:void(0);" title="CoMPAS 24 프렌치 이매지네이션">
+                            <img src="./images/package-imagenation.png" alt="프렌치 이매지네이션 패키지">
+                            <dl>
+                                <dt>
+                                    <h3>프렌치 이매지네이션 패키지</h3>
+                                </dt>
+                                <dd>CoMPAS 24 프렌치 이매지네이션
+                                    패키지 15% 할인 </dd>
+                                <dd>판매기간 : 2024.01.09 ~ 2024.02.29</dd>
+                            </dl>
+                        </a><a href="javascript:void(0);" title="예매하러가기">예매하러가기</a>
                     </li>
-                    <li>
-                        <img src="./images/package-compas 6.png" alt="CoMPAS 24 자유 패키지 (6편 이상)">
-                        <dl>
-                            <dt>
-                                <h3>CoMPAS 24 자유 패키지 (6편 이상)</h3>
-                            </dt>
-                            <dd>자유패키지 6편이상 할인 20%</dd>
-                            <dd>판매기간 : 2024.01.09 ~ 2024.02.29</dd>
-                        </dl><a href="javascript:void(0);" title="예매하러가기">예매하러가기</a>
+                    <li><a href="javascript:void(0);" title="CoMPAS 24 자유 패키지 (6편 이상)">
+                            <img src="./images/package-compas 6.png" alt="CoMPAS 24 자유 패키지 (6편 이상)">
+                            <dl>
+                                <dt>
+                                    <h3>CoMPAS 24 자유 패키지 (6편 이상)</h3>
+                                </dt>
+                                <dd>자유패키지 6편이상 할인 20%</dd>
+                                <dd>판매기간 : 2024.01.09 ~ 2024.02.29</dd>
+                            </dl>
+                        </a><a href="javascript:void(0);" title="예매하러가기">예매하러가기</a>
                     </li>
-                    <li>
-                        <img src="./images/package-compas 4.png" alt="Co MPAS 24 자유 패키지 (4편 이상)">
-                        <dl>
-                            <dt>
-                                <h3>CoMPAS 24 자유 패키지 (4편 이상)</h3>
-                            </dt>
-                            <dd>자유패키지 4편이상 할인 15%</dd>
-                            <dd>판매기간 : 2024.01.09 ~ 2024.02.29</dd>
-                        </dl><a href="javascript:void(0);" title="예매하러가기">예매하러가기</a>
+                    <li><a href="javascript:void(0);" title="CoMPAS 24 자유 패키지 (4편 이상)">
+                            <img src="./images/package-compas 4.png" alt="Co MPAS 24 자유 패키지 (4편 이상)">
+                            <dl>
+                                <dt>
+                                    <h3>CoMPAS 24 자유 패키지 (4편 이상)</h3>
+                                </dt>
+                                <dd>자유패키지 4편이상 할인 15%</dd>
+                                <dd>판매기간 : 2024.01.09 ~ 2024.02.29</dd>
+                            </dl>
+                        </a><a href="javascript:void(0);" title="예매하러가기">예매하러가기</a>
                     </li>
                 </ul>
             </article>
@@ -231,6 +247,7 @@
                         <li>
                             <a href="javascript:void(0);" title="퇴근길 콘서트">
                                 <img src="./images/preparing-rushhour.jpg" alt="">
+                                <img src="./images/preparing-rushhour1.jpg" alt="">
                                 <div>
                                     <h4>&#60;클래식&#62;2024 서울시향 퇴근길 콘서트</h4>
                                     <p>LG SIGNATURE 홀<br>공연기간 : 2024.04.09 ~ 추후공지
@@ -242,6 +259,7 @@
                         <li>
                             <a href="javascript:void(0);" title="키즈 콘서트">
                                 <img src="./images/preparing-kids.jpg" alt="">
+                                <img src="./images/preparing-kids1.png" alt="">
                                 <div>
                                     <h4>&#60;클래식&#62;서울시향과 함께하는 키즈 콘서트 ‘클래식 음악여행’</h4>
                                     <p>LG SIGNATURE 홀<br>공연기간 : 2024.04.12 ~ 추후공지</p>
@@ -252,6 +270,7 @@
                         <li>
                             <a href="javascript:void(0);" title="마비노기 자라섬재즈">
                                 <img src="./images/preparing-mabinogi.jpg" alt="">
+                                <img src="./images/preparing-mabinogi1.png" alt="">
                                 <div>
                                     <h4>&#60;재즈/월드뮤직&#62;마비노기 자라섬재즈 빅밴드 Live</h4>
                                     <p>LG SIGNATURE 홀<br>공연기간 : 2024.05.01 ~ 추후공지</p>
@@ -261,7 +280,8 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" title="피나와 함께 춤을">
-                                <img src="./images/preparing-Dancing with Pina (working title).jpg" alt="">
+                                <img src="./images/preparing-Dancing-with-Pina-(working-title).png" alt="">
+                                <img src="./images/preparing-Dancing-with-Pina-(working-title)1.png" alt="">
                                 <div>
                                     <h4>&#60;연극&#62; Creator's Box: '피나와 함께 춤을(가제)'</h4>
                                     <p>U+ 스테이지<br>공연기간 : 2024.09.28 ~ 10.06</p>
@@ -394,18 +414,19 @@
             <article class="notice">
                 <h2>공지사항<i class="	fas fa-plus"></i></h2>
                 <ul>
-                    <li><a href="javascript:void(0);" title=""><span></i> &dot;2024년 LG아트센터 서울 수시대관 신청
+                    <li><a href="javascript:void(0);" title="서울 수시대관 신청"><span></i> &dot;2024년 LG아트센터 서울 수시대관 신청
                                 안내</span><span>2024.01.04</span></a>
                     </li>
-                    <li><a href="javascript:void(0);" title=""><span></i> &dot;LG아트센터 서울 향기 136 설 프로모션
+                    <li><a href="javascript:void(0);" title="설 프로모션"><span></i> &dot;LG아트센터 서울 향기 136 설 프로모션
                                 할인</span><span>2024.01.23</span></a>
                     </li>
-                    <li><a href="javascript:void(0);" title=""><span></i> &dot;[안내] LG아트센터 서울 주차요금
+                    <li><a href="javascript:void(0);" title="안내"><span></i> &dot;&#91;안내&#93; LG아트센터 서울 주차요금
                                 변경</span><span>2024.01.22</span></a></li>
-                    <li><a href="javascript:void(0);" title=""><span></i> &dot;[티켓오픈] 국립발레단 <백조의호수> 오픈
+                    <li><a href="javascript:void(0);" title="티켓오픈"><span></i> &dot;&#91;티켓오픈&#93; 국립발레단 <백조의호수> 오픈
                                     안내</span><span>2024.01.16</span></a>
                     </li>
-                    <li><a href="javascript:void(0);" title=""><span>&dot;LG아트센터 서울 CoMPAS 24 티켓 매진
+                    <li><a href="javascript:void(0);" title="LG아트센터 서울 CoMPAS 24 티켓 매진
+                        안내"><span>&dot;LG아트센터 서울 CoMPAS 24 티켓 매진
                                 안내</span><span>2024.01.16</span></a>
                     </li>
                 </ul>

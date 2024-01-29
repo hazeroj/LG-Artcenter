@@ -23,6 +23,7 @@ body::-webkit-scrollbar {
     }
 
     /* 검색창 */
+
     .search_box form {
         width: 1000px;
     }
@@ -181,7 +182,8 @@ body::-webkit-scrollbar {
         transition: 0.5s;
 
     }
-    .screen_list>li:hover{
+
+    .screen_list>li:hover {
         filter: grayscale(0.5);
     }
 
@@ -197,7 +199,8 @@ body::-webkit-scrollbar {
 
     .screen_list>li:hover>a>p {
         height: 100px;
-        line-height: 3rem;font-size: 0.9rem;
+        line-height: 3rem;
+        font-size: 0.9rem;
     }
 
     /* 패키지예매 */
@@ -211,11 +214,28 @@ body::-webkit-scrollbar {
     .package ul li {
         margin: 0px;
         padding: 20px 0px 0px 0px;
+
+        transition: 0.5s;
     }
 
-    .package ul li:not(:nth-child(2)) a{
+    .package ul li:hover>a img {
+        transform: scale(1.03);
+        transition: 0.5s;
+    }
+
+    .package ul li>a dl:hover {
+        text-decoration: underline;
+
+    }
+
+    .package ul li:not(:nth-child(2)) a:last-child {
         transform: translateY(90%);
     }
+
+    .package ul li a:last-child:hover {
+        background-color: #AC631A;
+    }
+
     .package ul li:last-child {
         border-bottom: 1px solid #ccc;
     }
@@ -246,7 +266,23 @@ body::-webkit-scrollbar {
 
     .pre_list li a img {
         width: 47%;
-        padding: 0px 4%;
+        padding: 0px 4%;transition: 0.5s;
+    }
+    .pre_list li a img:first-child{
+        display: inline-block;
+        height: 100%;
+    }
+    .pre_list li:hover a img:first-child{
+        display: none;
+        height: 0px;
+    }
+    .pre_list li a img:nth-child(2){
+        display: none;
+        height: 0px;
+    }
+    .pre_list li:hover a img:nth-child(2){
+        display: inline-block;
+        height: 100%;
     }
 
     .pre_list li div {
@@ -259,6 +295,14 @@ body::-webkit-scrollbar {
 
     .pre_list li a span {
         text-align: center;
+        padding: 7px;
+        border: 1px solid #ccc;
+        transition: 0.5s;
+    }
+
+    .pre_list li a span:hover {
+
+        background-color: #E0B651;
     }
 
     .preparing_screen article .fas {
@@ -272,56 +316,57 @@ body::-webkit-scrollbar {
 
     /* 공연장/공간안내 */
     .theater {
-        height: 500px;
+        height: 460px;
     }
 
     .theater ul {
         display: flex;
         max-width: 1280px;
         margin: 0px auto;
+        position: relative;
+        justify-content: space-between;
     }
 
     .theater ul li {
         width: 20%;
         margin-left: 10px;
-        position: relative;
+        position: static;
+    }
+
+    .theater ul li:first-child {
+
+        margin-left: 0px;
     }
 
     .theater ul li>div {
         display: none;
         position: absolute;
-        width: 1000px;
-        height: 350px;
+        width: 100%;
+        height: 300px;
         margin: 0px;
         top: 34px;
-    }
-
-    .theater ul li:nth-child(4)>div,
-    .theater ul li:last-child>div {
-        left: auto;
+        left: 0px;
         right: 0px;
     }
 
-    .theater ul li:nth-child(3)>div {
-        transform: translateX(-50%);
-    }
 
     .theater ul li img {
-        width: 400px;
+        width: 450px;
         margin-bottom: 0px;
     }
 
-
-    .theater ul li div a {
-        position: absolute;
-        right: 0px;
-    }
 
     .view {
         flex-direction: row;
     }
 
-
+    .theater ul li div a {
+        position: absolute;
+        right: 0px;
+    }
+    .theater ul li div a:hover{
+        border-bottom: 2px solid #333;
+        }
 
 
     /* 공지사항과 멤버십 */
@@ -336,9 +381,8 @@ body::-webkit-scrollbar {
         padding: 0px;
         background-color: #fff;
     }
-
-    .membership a {
-        bottom: -40px;
+    .notice ul li:hover {
+        border-bottom: 1px solid #6c6c6c;
     }
 
     /* 멤버쉽서식 */
@@ -351,19 +395,24 @@ body::-webkit-scrollbar {
     }
 
     .membership img {
-        width: 40%;
-
+        width: 40%;transition: 1s;
     }
-
+    .membership img:hover{
+        transform: rotate(25deg);
+    }
     .membership p {
         width: 60%;
-        margin-top: 0px;
+        margin-top: 10px;
     }
 
     .membership a {
         position: absolute;
         right: 10px;
-        bottom: 0px;
+        bottom: -25px;
+        transition: 0.5s;
+    }
+    .membership:hover a{
+        transform: scale(1.1);
     }
 
 
@@ -465,7 +514,7 @@ body::-webkit-scrollbar {
         left: 0px;
         width: 100%;
         height: 100%;
-        z-index: 50;
+        z-index: 1000;
     }
 
     .modal .center {

@@ -1,29 +1,33 @@
 $(document).ready(function () {
     // 메인 배너 
 
-    let v_slide_img = $('.banner a')
-    let i = 0;
-    let c_btn = $('.banner span')
+    let v_slide_img = $('.banner ul li');
+    let c_btn = $('.banner span');
+    let b_i = 0
 
     function fadeInOut() {
-        v_slide_img.fadeOut()
-
+        v_slide_img.fadeOut();
         $('.b_c_btn span').removeClass('on');
-        if (i == 4) {
-            i = 0;
+
+        if (b_i == 4) {
+            b_i = 0;
         } else {
-            i++;
+            b_i++;
         }
-        $('.b_c_btn span').eq(i).addClass('on');
-        v_slide_img.eq(i).stop().fadeIn();
+
+        console.log(b_i);
+        $('.b_c_btn span').eq(b_i).addClass('on');
+        v_slide_img.eq(b_i).stop().fadeIn();
+
     }
 
-    let Timer = setInterval(fadeInOut, 5000);
+    let Timer = setInterval(fadeInOut, 3000);
+
 
     c_btn.click(function () {
 
         let idx = $(this).index();
-        console.log(idx);
+        // console.log(idx);
 
         $('.b_c_btn span').removeClass('on');
 
@@ -42,8 +46,9 @@ $(document).ready(function () {
     })
 
     c_btn.mouseleave(function () {
-        Timer = setInterval(fadeInOut, 5000);
+        Timer = setInterval(fadeInOut, 3000);
     })
+
     //////////////////////////////////////////////////////////////////
     // 검색창
     $('.fa-search').click(function () {
@@ -109,7 +114,7 @@ $(document).ready(function () {
     let p_l_btn = $('.preparing_screen article .fa-angle-left')
     let nn = 0;
 
-    if ($(window).width() >= 1025) {
+    if ($(window).width() >= 1280) {
         i = $('.pre_list li').width() * 2 + 12
 
         p_r_btn.click(function () {
@@ -159,10 +164,10 @@ $(document).ready(function () {
     $('.theater ul li a').click(function () {
         $(this).addClass('view_color').parent().siblings().find('a').removeClass('view_color')
 
-        if ($(window).width() < 653) {
+        if ($(window).width() < 744) {
 
-            if ($('.theater ul li:last-child>a').hasClass('view_color')) { $('.theater').height(750) } else {
-                $('.theater').height(920)
+            if ($('.theater ul li:last-child>a').hasClass('view_color')) { $('.theater').height(920) } else {
+                $('.theater').height(1020)
             }
 
         }
@@ -185,16 +190,20 @@ $(document).ready(function () {
         $('.lnb>ul>li>a').click(function () {
             $(this).next().slideToggle().parent().siblings().find('.sub').slideUp()
         })
+    } else {
+        $('.f_top .sub').css('display', 'block')
     }
 
     //////////////////////////////////////////////////////////////////
     // 메인페이지 모달 띄우기
     // if ($(window).width() >= 1025) {
+
+    let m_n = Math.ceil(Math.random() * 4)
     let popup = `
         <div class="modal">
             <div class='center'>
                 <a href="#" title="호텔예약하기">
-                    <img src="./images/popup.png" alt="호텔팝업">
+                    <img src="./images/popup${m_n}.png" alt="팝업">
                 </a>
                 <div class="today">
                     <input type="checkbox" id="ch">
@@ -228,7 +237,7 @@ $(document).ready(function () {
     // 바디 클릭하면 슬라이드 업하기
     $('main').click(function () {
         $('.search_box').hide()
-        $('.sub').hide();
+        $('header .sub').hide();
     })
 
 
