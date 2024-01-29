@@ -464,7 +464,7 @@ article>h2 {
 
     .package ul li:last-child {
         padding: 15px 0px;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #ccc !important;
     }
 
     .package ul li:first-child,

@@ -148,6 +148,7 @@
     .theater ul li img {
         width: 50%;
         margin-bottom: 0px;
+        min-height: 471px;
     }
 
     .theater ul li dl {
