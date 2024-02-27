@@ -7,9 +7,9 @@
  .banner ul {
  height: 50vh; } 
 
- .banner ul li { width: 100%; max-height: 483px; height: 50vh; } 
+ .banner li { width: 100%; max-height: 483px; height: 50vh; } 
 
- .banner ul li a img { height: 100%; width: 100%; max-height: 483px; } 
+ .banner li a img { height: 100%; width: 100%; max-height: 483px; } 
 
  /* 진행중인공연 */
  .screen_list { width: 90%; margin: 0px auto 10px; grid-template-columns: repeat(3, 33%); grid-template-rows: repeat(3, 190px); grid-template-areas:
@@ -38,14 +38,14 @@
  /* 준비중인공연 */
  .pre_list { width: 95%; margin: 0px auto; } 
 
- .pre_list li a { display: flex; } 
+ .pre_list a { display: flex; } 
 
- .pre_list li a img { width: 50%; padding: 0px 2.5%; } 
+ .pre_list a img { width: 50%; padding: 0px 2.5%; } 
 
  @media (max-width:1279px) and (min-width:744px){
- .pre_list li a img:first-child { width: 30%; } 
+ .pre_list a img:first-child { width: 30%; } 
 
- .pre_list li a img:nth-child(2) { display: inline-block; height: 100%; width: 30%; } 
+ .pre_list a img:nth-child(2) { display: inline-block; height: 100%; width: 30%; } 
 
  .pre_list li div { width: 40%; } 
  }
@@ -54,7 +54,7 @@
 
  .pre_list li div { width: 45%; text-align: center; display: flex; flex-direction: column; justify-content: space-around; } 
 
- .pre_list li a span { text-align: center; } 
+ .pre_list a span { text-align: center; } 
 
  .preparing_screen article .fas { top: 50%; } 
 
@@ -62,17 +62,17 @@
  /* 공연장/공간안내 */
  .theater { height: 750px; } 
 
- .theater ul li>div { flex-direction: row; width: 95%; margin: 0px 2.5%; } 
+ .theater li>div { flex-direction: row; width: 95%; margin: 0px 2.5%; } 
 
  @media screen and (max-width:1100px){
- .theater ul li dl { padding-bottom: 50px; } 
+ .theater li dl { padding-bottom: 50px; } 
 }
 
- .theater ul li img { width: 50%; margin-bottom: 0px; min-height: 471px; } 
+ .theater li img { width: 50%; margin-bottom: 0px; min-height: 471px; } 
 
- .theater ul li dl { width: 48%; } 
+ .theater li dl { width: 48%; } 
 
- .theater ul li div a { position: absolute; right: 3%; } 
+ .theater li div a { position: absolute; right: 3%; } 
 
  .view { flex-direction: row; } 
 
@@ -92,9 +92,9 @@
 
  .f_top>.lnb>ul { display: flex; justify-content: space-around; } 
 
- .f_top>.lnb>ul>li { width: 20%; } 
+ .f_top .lnb li { width: 20%; } 
 
- .f_top>.lnb>ul>li>a { text-indent: 15px; } 
+ .f_top .lnb li>a { text-indent: 15px; } 
 
  /* 푸터탑 서브내비게이션 */
  .f_top .sub { display: block; background-color: transparent; } 
@@ -102,8 +102,8 @@
 
  .f_top .sub>li>a { text-indent: 10px; } 
 
- .f_top>.lnb>ul>li>a>span:first-child,
- .f_top>.lnb>ul>li>a>span:last-child { display: none; } 
+ .f_top .lnb li span:first-child,
+ .f_top .lnb li span:last-child { display: none; } 
 
  .f_top .sub>li { border: none; } 
 
