@@ -57,7 +57,7 @@ $(document).ready(function () {
             if ($(window).width() >= 1025) {
                 $('.sub').slideUp();
             } else {
-                $('.gnb').slideUp();
+                $('.gnb').hide();
                 $('.toggle span:first-child').removeClass('ro1')
                 $('.toggle span:nth-child(2)').removeClass('fff')
                 $('.toggle span:last-child').removeClass('ro2')
@@ -70,7 +70,7 @@ $(document).ready(function () {
     let gnb = $('.gnb')
 
     $('.toggle').click(function () {
-        $('.gnb').slideToggle()
+            gnb.slideToggle()
 
         if (gnb.show()) {
             $('header').css('position', 'fixed')
@@ -83,14 +83,10 @@ $(document).ready(function () {
     })
 
     $('.gnb>ul>li>a').click(function () {
-        $('.search_box').slideUp()
+        $('.search_box').slideUp();
+        $(this).next().toggle().parent().siblings().find('.sub').hide();
     })
 
-
-
-    $('.gnb>ul>li>a').click(function () {
-        $(this).next().toggle().parent().siblings().find('.sub').hide()
-    })
     //////////////////////////////////////////////////////////////////
     // 탑버튼
     $(window).scroll(function () {

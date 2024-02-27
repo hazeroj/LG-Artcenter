@@ -21,7 +21,7 @@
  .gnb_wrap { order: 2; } 
 
  /* 메인내비 */
- .gnb { display: block; position: relative; top: 0px; background-color: transparent } 
+ .gnb { display: block; position: relative; top: 0px; background-color: transparent ;} 
 
  .gnb ul { border: none; } 
 
@@ -53,11 +53,11 @@
  article { width: 1280px !important; margin: 0px auto; } 
 
  /* 배너서식 */
- .banner { width: 100%; height: 600px; max-height: none; } 
+ .banner { width: 100%; height: 680px; max-height: none; } 
 
- .banner li { width: 100%; height: 600px; } 
+ .banner ul li{ width: 100%; height: 100%;  } 
 
- .banner li a img { height: 600px; width: 100%; } 
+ .banner ul li a img { height: 680px; width: 100%; } 
 
 
 
@@ -173,7 +173,7 @@
 
  .f_top>.lnb>ul { display: flex; justify-content: space-around; } 
 
- .f_top .lnb li { width: 20%; } 
+ .f_top .lnb li { width: 100%; padding: 2px 0px;} 
 
 
  .f_top .lnb li>a { text-indent: 0px; } 
@@ -197,12 +197,12 @@
 
  .f_top>.sns>li:last-child { padding: 10px 15px; } 
 
- .f_bottom h2 { width: 1280px; margin: 0px auto; } 
+ .f_bottom h2 { width: 1280px; margin: 0px auto; height: 50px;} 
 
  .f_top>.sns>li:hover { border: 2px solid #E0B651; background-color: #E0B651; } 
 
  /* 탑버튼 */
- .fa-angle-up { position: fixed; bottom: 100px; right: 100px; background-color: rgba(0, 0, 0, 0.5); color: #fff; border-radius: 50%; border: 2px solid #000000; font-size: 2rem; padding: 10px; cursor: pointer; } 
+ .fa-angle-up { position: fixed; bottom: 100px; right: 100px; background-color: rgba(0, 0, 0, 0.5); color: #fff; border-radius: 50%; border: 2px solid #000000; font-size: 2rem; padding: 8px 10px; cursor: pointer; } 
 
  /* 모달서식 */
  .modal { background-color: rgba(0, 0, 0, 0.7); position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 1000; } 
