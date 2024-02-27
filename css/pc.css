@@ -33,7 +33,7 @@
 
  .gnb>ul>li>a:hover,
  header .sub>li>a:hover,
- .gnb>ul>li>a:hover>i { background-color: none; color: #333; } 
+ .gnb>ul>li>a:hover>i { background-color: transparent; color: #333; } 
 
  .gnb>ul>li>a>i { float: none; color: #333; } 
 

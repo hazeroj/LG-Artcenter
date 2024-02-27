@@ -1,11 +1,8 @@
-@charset "utf-8";
-@media screen and (max-width:1279px) and (min-width:744px) {
- /* 메인서식 */
+@charset "utf-8";@media screen and (max-width:1279px) and (min-width:744px) { /* 메인서식 */
  /* 배너서식 */
  .banner { max-height: 483px; height: 50vh; } 
 
- .banner ul {
- height: 50vh; } 
+ .banner ul { height: 50vh; } 
 
  .banner li { width: 100%; max-height: 483px; height: 50vh; } 
 
@@ -60,19 +57,19 @@
 
 
  /* 공연장/공간안내 */
- .theater { height: 750px; } 
+ .theater { height: 630px; } 
 
  .theater li>div { flex-direction: row; width: 95%; margin: 0px 2.5%; } 
 
  @media screen and (max-width:1100px){
  .theater li dl { padding-bottom: 50px; } 
-}
+ }
 
- .theater li img { width: 50%; margin-bottom: 0px; min-height: 471px; } 
+ .theater li img { width: 50%; margin-bottom: 0px;} 
 
  .theater li dl { width: 48%; } 
 
- .theater li div a { position: absolute; right: 3%; } 
+ .theater li div a { position: absolute; right: 3%; line-height: 1.3rem;font-weight:500;width: 90px;} 
 
  .view { flex-direction: row; } 
 
@@ -92,15 +89,15 @@
 
  .f_top>.lnb>ul { display: flex; justify-content: space-around; } 
 
- .f_top .lnb li { width: 20%; } 
+ .f_top .lnb li { width: 100%; } 
 
- .f_top .lnb li>a { text-indent: 15px; } 
+ .f_top .lnb li>a { text-indent: 10px; } 
 
  /* 푸터탑 서브내비게이션 */
  .f_top .sub { display: block; background-color: transparent; } 
 
 
- .f_top .sub>li>a { text-indent: 10px; } 
+ .f_top .sub>li>a { text-indent: 10px; line-height: 1.6rem;} 
 
  .f_top .lnb li span:first-child,
  .f_top .lnb li span:last-child { display: none; } 
@@ -126,4 +123,7 @@
  .today label { font-size: 0.9rem; color: #333; } 
 
  #c_btn { float: right; margin: 10px 20px; background-color: #ff8900; border: none; padding: 4px 6px; font-size: 0.9rem; border-radius: 5px; cursor: pointer; } 
+ }
+.fa-angle-up{
+    position: absolute;bottom: -50px;
 }
